@@ -1,6 +1,11 @@
+import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
-import {GetStarted} from './pages';
+import Router from './router';
 
 export default function App() {
-  return <GetStarted />;
+  return (
+    <NavigationContainer>
+      <Router />
+    </NavigationContainer>
+  );
 }
